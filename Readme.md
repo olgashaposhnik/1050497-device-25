@@ -1,7 +1,7 @@
 ﻿# Личный проект «Девайс»
 
 * Студент: [Ольга Шапошник](https://up.htmlacademy.ru/htmlcss/25/user/1050497).
-* Наставник: Никита Рогатнев.
+* Наставник: Никита Рогатнев (https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
