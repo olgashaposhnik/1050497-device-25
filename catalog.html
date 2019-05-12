@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./сss/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div>
+      <a class="main-header-logo" href="index.html">
+        <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип магазина «Девайс»">
+      </a>
+      </div>
+      <nav class="user-navigation">
+        <ul class="user-navigator">
+          <li><!-- Здесь будет форма -->Поиск по сайту</li>
+          <li class="user-cabinet"><a href="user-cabinet.html">Валентин Петухов</a></li>
+          <li class="exit-link"><a href="exit.html">Выйти</a></li>
+          <li class="compare"><a href="compare.html">Сравнить</a></li>
+          <li class="basket"><a href="basket.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main content">
+      <h1 class="product-category">Моноподы для селфи</h1>
+       <ul class="product-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li class="monopodes">Моноподы для селфи</li>
+       </ul>
+      <section class="filters">
+       <h2 class="visually-hidden">Фильтр товаров</h2>
+       <!-- Здесь будет форма -->
+      </section>
+      <section class="product-choice">
+          <form action="https://device.ru" method="post">
+            <h2 class="product-filter">Цвет</h2>
+            <input type="checkbox" name="black" id="black-color" checked>
+            <label for="black-color">Черный</label>
+            <input type="checkbox" name="white" id="white-color">
+            <label for="white-color">Белый</label>
+            <input type="checkbox" name="blue" id="blue-color" checked>
+            <label for="blue-color">Синий</label>
+            <input type="checkbox" name="red" id="red-color" checked>
+            <label for="red-color">Красный</label>
+            <input type="checkbox" name="pink" id="pink-color">
+            <label for="pink-color">Розовый</label>
+            <h2 class="product-filter">Bluetooth</h2>
+            <input type="radio" name="bluetooth" value="Есть">
+            <input type="radio" name="bluetooth" value="Нет">
+          </form>
+        </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог моноподов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </p>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item">Любительская селфи-палка</span>
+                <span class="catalog-item-price">500 руб.</span>
+              </a>
+            </h3>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-2.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </p>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item">Профессиональная селфи-палка</span>
+                <span class="catalog-item-price">1500 руб.</span>
+              </a>
+            </h3>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-3.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </p>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item">Непотопляемая селфи-палка</span>
+                <span class="catalog-item-price">2500 руб.</span>
+              </a>
+            </h3>
+          </li>
+          <li class="catalog-item">
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-4.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+              </a>
+            </p>
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item">Селфи-палка «Следуй за мной»</span>
+                <span class="catalog-item-price">4900 руб.</span>
+              </a>
+            </h3>
+          </li>
+        </ul>
+      </section>
+      </main>
+      <footer class="main-footer">
+        <div>
+        <a class="main-header-logo">
+          <img src="./img/index-logo.svg" width="368" height="153" alt="Логотип магазина «Девайс»">
+        </a>
+        </div>
+        <nav class="user-navigation">
+          <ul class="user-navigator">
+            <li class="user-cabinet"><a href="user-cabinet.html">Валентин Петухов</a></li>
+            <li class="exit-link"><a href="exit.html">Выйти</a></li>
+            <li class="compare"><a href="compare.html">Сравнить</a></li>
+            <li class="basket"><a href="basket.html">Корзина</a></li>
+          </ul>
+        </nav>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="warranty.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <p>г.Москва, ул. Строителей, 15</p>
+          <p><a href="call.html">Тел.: +7(495)495-95-95</a></p>
+        </div>
+        <ul>
+         <li><a class="social-button" href="#">Фейсбук</a></li>
+         <li><a class="social-button" href="#">Инстаграм</a></li>
+         <li><a class="social-button" href="#">Твиттер</a></li>
+        </ul>
+        <div>
+        <a class="html-academy-logo" href="#">HTML Академия</a>
+        </div>
+      </footer>
