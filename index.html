@@ -5,6 +5,53 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./сss/style.css">
   </head>
+  <section class="modal modal-catalog">
+        <h2 class="item-catalog">Каталог товаров</h2>
+        <ul class="catalog">
+          <li><a href="virtual-relity.html">Виртуальная реальность</a></li>
+          <li><a href="selfy-monopodes.html">Моноподы для селфи</a></li>
+          <li><a href="action-camera.html">Экшн-камеры</a></li>
+          <li><a href="fitness-braceletes.html">Фитнес-браслеты</a></li>
+          <li><a href="smart-watches.html">Умные часы</a></li>
+          <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+  </section>
+  <section class="modal modal-write-to-us">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form class="write-to-us" action="http://device.ru" method="post">
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input class="enter-user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-email">Ваш e-mail:</label>
+              <input class="enter-user-email" id="user-e-mail" type="email" name="password" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="letter-text">Текст письма:</label>
+              <input class="enter-letter-text" id="letter-text" type="text" name="text" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">
+              Отправить
+            </button>
+        </form>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <p>
+          <img src="img/map.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, Москва">
+        </p>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+      </section>
   <body>
 <header class="main-header">
   <div>
@@ -14,10 +61,15 @@
   </div>
   <nav class="user-navigation">
     <ul class="user-navigator">
-      <li><img src="./img/search.svg" width="16" height="16" alt="Картинка «Лупа»"><!-- Здесь будет форма -->Поиск по сайту</li>
+      <li><img src="./img/search.svg" width="16" height="16" alt="Картинка «Лупа»">
+        <form action="http/device.ru" method="post">
+          <label for="search-form"></label>
+          <input name="search" placeholder="Поиск по сайту" type="search" id="search-form">
+          <button type="submit"></button>
+        </form></li>
       <li class="login-link"><img src="./img/user.svg" width="16" height="16" alt="Картинка «Пользователь»"><a href="enter.html">Войти</a></li>
       <li class="compare"><img src="./img/compare.svg" width="16" height="16" alt="Картинка Сравнить"><a href="compare.html">Сравнить</a></li>
-      <li class="basket"><img src="./img/cart.svg" width="16" height="16" alt="Картинка Сравнить"><a href="basket.html">Корзина</a></li>
+      <li class="basket"><img src="./img/cart.svg" width="16" height="16" alt="Картинка корзина"><a href="basket.html">Корзина</a></li>
     </ul>
   </nav>
   <nav class="main-navigation">
@@ -30,7 +82,7 @@
   </nav>
 </header>
 <main class="main content">
-<h1 class="visually-hidden">Магазин «Девайс»</h1>
+  <h1 class="visually-hidden">Магазин «Девайс»</h1>
 <section class="features">
   <div class="features-list">
     <h2 class="feature-item">О нас</h2>
@@ -44,7 +96,7 @@
       <a href="about.html">Подробнее о нас</a>
   </div>
   <div class="features-list">
-     <h2 class="feature-item">Контакты</h2>
+     <h2 class="contacts">Контакты</h2>
      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
      <a class="main-header-map" href="map.html">
        <img src="./img/map.jpg" width="368" height="153" alt="Адрес магазина «Девайс»">
@@ -63,7 +115,7 @@
     <ul class="user-navigator">
       <li class="login-link"><img src="./img/user.svg" width="16" height="16" alt="Картинка «Пользователь»"><a href="enter.html">Войти</a></li>
       <li class="compare"><img src="./img/compare.svg" width="16" height="16" alt="Картинка Сравнить"><a href="compare.html">Сравнить</a></li>
-      <li class="basket"><img src="./img/cart.svg" width="16" height="16" alt="Картинка Сравнить"><a href="basket.html">Корзина</a></li>
+      <li class="basket"><img src="./img/cart.svg" width="16" height="16" alt="Картинка Корзина"><a href="basket.html">Корзина</a></li>
     </ul>
   </nav>
   <nav class="main-navigation">
