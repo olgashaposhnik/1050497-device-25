@@ -5,6 +5,16 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./сss/style.css">
   </head>
+  <section class="catalog">
+        <h2 class="item-catalog">Каталог товаров</h2>
+        <ul class="catalog">
+          <li><a href="virtual-relity.html">Виртуальная реальность</a></li>
+          <li><a href="selfy-monopodes.html">Моноподы для селфи</a></li>
+          <li><a href="action-camera.html">Экшн-камеры</a></li>
+          <li><a href="fitness-braceletes.html">Фитнес-браслеты</a></li>
+          <li><a href="smart-watches.html">Умные часы</a></li>
+          <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+  </section>
   <body>
     <header class="main-header">
       <div class="main-logo">
@@ -14,7 +24,13 @@
       </div>
       <nav class="user-navigation">
         <ul class="user-navigator">
-          <li><img src="./img/search.svg" width="16" height="16" alt="Картинка «Лупа»"><!-- Здесь будет форма -->Поиск по сайту</li>
+          <li><img src="./img/search.svg" width="16" height="16" alt="Картинка «Лупа»">
+            <form action="http/device.ru" method="post">
+              <label for="search-form"></label>
+              <input name="search" placeholder="Поиск по сайту" type="search" id="search-form">
+              <button type="submit"></button>
+            </form>
+          </li>
           <li class="user-cabinet"><img src="./img/user.svg" width="16" height="16" alt="Картинка «Пользователь»"><a href="user-cabinet.html">Валентин Петухов</a></li>
           <li class="exit-link"><a href="exit.html">Выйти</a></li>
           <li class="compare"><img src="./img/compare.svg" width="16" height="16" alt="Картинка Сравнить"><a href="compare.html">Сравнить</a></li>
@@ -45,20 +61,47 @@
       </section>
       <aside class="product-choice">
           <form action="https://device.ru" method="post">
-            <h2 class="product-filter">Цвет</h2>
-            <input type="checkbox" name="black" id="black-color" checked>
-            <label for="black-color">Черный</label>
-            <input type="checkbox" name="white" id="white-color">
-            <label for="white-color">Белый</label>
-            <input type="checkbox" name="blue" id="blue-color" checked>
-            <label for="blue-color">Синий</label>
-            <input type="checkbox" name="red" id="red-color" checked>
-            <label for="red-color">Красный</label>
-            <input type="checkbox" name="pink" id="pink-color">
-            <label for="pink-color">Розовый</label>
-            <h2 class="product-filter">Bluetooth</h2>
-            <input type="radio" name="bluetooth" value="Есть">
-            <input type="radio" name="bluetooth" value="Нет">
+            <fieldset>
+             <legend class="product-filter">Цвет</legend>
+             <ul>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black-color" checked>
+                 <label for="black-color">Черный</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white-color">
+                 <label for="white-color">Белый</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue-color" checked>
+                 <label for="blue-color">Синий</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red-color" checked>
+                 <label for="red-color">Красный</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink-color">
+                 <label for="pink-color">Розовый</label>
+               </li>
+             </ul>
+            </fieldset>
+            <fieldset>
+             <legend class="product-filter">Bluetooth</legend>
+             <ul>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="bluetooth" value="with-bluetooth" id="with-bluetooth" checked>
+                 <label for="with-bluetooth">Есть</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="bluetooth" value="without-bluetooth" id="without-bluetooth" checked>
+                 <label for="without-bluetooth">Нет</label>
+               </li>
+             </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">
+            Показать
+            </button>
           </form>
       </aside>
       <section class="catalog">
