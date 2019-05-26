@@ -1,0 +1,340 @@
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    font-weight: 800;
+    src: url('Gilroy-ExtraBold.woff2') format('woff2'),
+    url('Gilroy-ExtraBold.woff') format('woff');
+    src: url(Gilroy.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    font-weight: 300;
+    src: url('Gilroy-Light.woff2') format('woff2'),
+    url('Gilroy-Light.woff') format('woff');
+    src: url(Gilroy.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    font-weight: 300;
+    src: url('OpenSans-Light.woff2') format('woff2'),
+    url('OpenSans-Light.woff') format('woff');
+    src: url(OpenSans-Light.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  text-transform: capitalize;
+
+  background-color: #ffffff;
+  }
+
+a {
+  text-decoration: none;
+}
+
+.user-navigation {
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+input::placeholder {
+  font-family: "OpenSans-Light";
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation {
+  font-family: "Gilroy-ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #000000;
+}
+
+.site-navigation,
+.user-navigator {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigator a {
+  color: ##000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+color: #rgba(0, 0, 0, 0.6);
+}
+
+.social-networks {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f0c52e;
+}
+
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.feature-item {
+  font-family: "Gilroy-ExtraBold";
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-footer-logo
+.footer-login-link
+.footer-compare
+.footer-basket
+.footer-html-academy {
+  background-color: #ffc600;
+}
+
+.button {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #f0c52e;
+  border: none;
+}
+
+.write-to-us input {
+  font: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+
+  background-color: e5e5e5;
+}
+
+.write-to-us input:hover {
+  color: rgba(70, 70, 70, 0.4);
+  background-color: #eaeaea;
+}
+
+.write-to-us input:focus {
+  color: #464646;
+  background-color: #ffffff;
+}
+
+.write-to-us input:invalid {
+  color: rgba(70, 70, 70, 0.4);
+  background-color: #f6dada;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-networks  {
+  text-align: center;
+}
+
+.social-networks ul {
+  list-style: none;
+}
+
+.modal {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.write-to-us input[type="text"],
+.write-to-us input[type="email"] {
+  font: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+  text-transform: capitalize;
+
+  background-color: #f2f2f2;
+}
+
+.write-to-us input:hover {
+  background-color: #eaeaea;
+}
+
+.write-to-us input:focus {
+  background-color: #ffffff;
+  color: #464646;
+  border: solid 3px #f0c52e;
+  }
+
+.write-to-us input:invalid {
+  background-color: #f6dada;
+}
+
+.search-form input[type="search"] {
+  font: OpenSans-Light;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
+
+  background-color: #f0c52e;
+}
+
+.product-choice {
+  background-color: #ebebeb;
+}
+
+.product-category {
+  font-family: Gilroy;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.product-list ul {
+  list-style: none;
+}
+
+.product-list {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product-filter  {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product-choice fieldset {
+  border: none;
+}
+
+.product-choice legend {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+.product-filter ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+.filter-option-input:disabled + label {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.86;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #a6a6a6;
+  opacity: 0.25;
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #000000;
+}
+
+.catalog-item-price {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #464646;
+}
