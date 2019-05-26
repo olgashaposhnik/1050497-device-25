@@ -1,31 +1,31 @@
 @font-face {
     font-family: Gilroy-ExtraBold;
     font-weight: 800;
-    src: url('Gilroy-ExtraBold.woff2') format('woff2'),
-    url('Gilroy-ExtraBold.woff') format('woff');
+    src: url('./fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('./fonts/Gilroy-ExtraBold.woff') format('woff');
     src: url(Gilroy.ttf);
 }
 
 @font-face {
     font-family: Gilroy-Light;
     font-weight: 300;
-    src: url('Gilroy-Light.woff2') format('woff2'),
-    url('Gilroy-Light.woff') format('woff');
+    src: url('./fonts/Gilroy-Light.woff2') format('woff2'),
+    url('./fonts/Gilroy-Light.woff') format('woff');
     src: url(Gilroy.ttf);
 }
 
 @font-face {
     font-family: OpenSans-Light;
     font-weight: 300;
-    src: url('OpenSans-Light.woff2') format('woff2'),
-    url('OpenSans-Light.woff') format('woff');
+    src: url('./fonts/OpenSans-Light.woff2') format('woff2'),
+    url('./fonts/OpenSans-Light.woff') format('woff');
     src: url(OpenSans-Light.ttf);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -40,7 +40,7 @@ a {
 }
 
 .user-navigation {
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans";
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -53,8 +53,8 @@ a {
   color: #000000;
 }
 
-input::placeholder {
-  font-family: "OpenSans-Light";
+.search-form input::placeholder {
+  font-family: "OpenSans";
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -62,7 +62,7 @@ input::placeholder {
 }
 
 .main-navigation {
-  font-family: "Gilroy-ExtraBold";
+  font-family: "Gilroy";
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -239,6 +239,15 @@ color: #rgba(0, 0, 0, 0.6);
 .modal {
   color: #000000;
   background-color: #ffffff;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
 }
 
 .write-to-us input[type="text"],
