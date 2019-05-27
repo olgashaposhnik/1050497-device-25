@@ -40,7 +40,7 @@ a {
 }
 
 .user-navigation {
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -54,7 +54,7 @@ a {
 }
 
 .search-form input::placeholder {
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -62,7 +62,7 @@ a {
 }
 
 .main-navigation {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -89,7 +89,7 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-color: #rgba(0, 0, 0, 0.6);
+color: rgba(0, 0, 0, 0.6);
 }
 
 .social-networks {
@@ -115,7 +115,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .features a {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -127,7 +127,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .features-list h2 {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   font-style: normal;
@@ -139,7 +139,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .feature-item p {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -151,7 +151,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .feature-item ol {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 2.5;
@@ -167,7 +167,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .button {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -183,7 +183,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .write-to-us input {
-  font: OpenSans;
+  font: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -193,7 +193,7 @@ color: #rgba(0, 0, 0, 0.6);
   text-align: left;
   color: rgba(70, 70, 70, 0.4);
 
-  background-color: e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .write-to-us input:hover {
@@ -217,7 +217,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .footer-contacts {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -239,7 +239,7 @@ color: #rgba(0, 0, 0, 0.6);
 .modal {
   color: #000000;
   background-color: #ffffff;
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -252,7 +252,7 @@ color: #rgba(0, 0, 0, 0.6);
 
 .write-to-us input[type="text"],
 .write-to-us input[type="email"] {
-  font: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -281,7 +281,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .search-form input[type="search"] {
-  font: OpenSans-Light;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -300,7 +300,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .product-category {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   font-style: normal;
@@ -316,7 +316,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .product-list {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -328,7 +328,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .product-filter  {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -344,7 +344,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .product-choice legend {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -361,7 +361,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .filter-option-input:disabled + label {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -378,7 +378,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .catalog-item h3 {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -390,7 +390,7 @@ color: #rgba(0, 0, 0, 0.6);
 }
 
 .catalog-item-price {
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
