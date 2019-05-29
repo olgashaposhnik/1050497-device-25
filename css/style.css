@@ -36,13 +36,41 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .main-header {
   background-color: #f0c52e;
   opacity: 0.5;
+  display: flex;
+  margin-top: 40px;
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: center;
 }
 
 .main-header a{
   color: #000000;
+}
+
+.main-header-logo {
+  width: 163px;
+  height: 35px;
+  margin-left: 59px;
+  margin-top: -19px;
+  display: flex;
+  order: -1;
 }
 
 .user-navigation {
@@ -57,6 +85,13 @@ a {
   letter-spacing: 0.2px;
   text-align: left;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  align-items: center;
 }
 
 .search-form input::placeholder {
@@ -79,6 +114,14 @@ a {
   letter-spacing: 3.6px;
   text-align: left;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  align-items: center;
+  order: 2;
 }
 
 .site-navigation,
@@ -105,10 +148,42 @@ color: rgba(0, 0, 0, 0.6);
 .main-footer {
   background-color: #464646;
   color: #ffffff;
+  padding-top: 65px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.main-footer .main-logo,
+.main-footer .user-navigation,
+.main-footer .main-navigation,
+.main-footer .footer-contacts{
+  margin: 0;
+}
+
+.main-footer .main-logo {
+  width: 163px;
+}
+
+.main-footer .user-navigation {
+  width: 312px;
+}
+
+.main-footer .main-navigation {
+  width: 423px;
 }
 
 .main-footer a{
   color: #ffffff;
+  margin-top: 93px;
+}
+
+.features {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 93px;
+   margin-bottom: 93px;
 }
 
 .features a {
@@ -123,6 +198,17 @@ color: rgba(0, 0, 0, 0.6);
   color: #000000;
 }
 
+.features-about {
+  width: 462px;
+  padding-left: 139px;
+  padding-right: 138px;
+}
+
+.features-contacts {
+  width: 511px;
+  padding-right: 140px;
+}
+
 .features-list h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
@@ -135,7 +221,8 @@ color: rgba(0, 0, 0, 0.6);
   color: #000000;
 }
 
-.feature-item p {
+.features-about p,
+.features-contacts p {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -147,7 +234,7 @@ color: rgba(0, 0, 0, 0.6);
   color: #464646;
 }
 
-.feature-item ol {
+.features-about ol {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -161,6 +248,7 @@ color: rgba(0, 0, 0, 0.6);
 .footer-basket
 .footer-html-academy {
   background-color: #ffc600;
+  margin: 0;
 }
 
 .button {
@@ -223,6 +311,14 @@ color: rgba(0, 0, 0, 0.6);
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  margin-right: 140px;
+  margin-left: 140px;
+}
+
+.footer-html-academy {
+  width: 27px;
+  margin-left: 140px;
+  margin-bottom: 66px;
 }
 
 .social-networks  {
