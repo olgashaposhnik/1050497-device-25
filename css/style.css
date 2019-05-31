@@ -39,25 +39,15 @@ a {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 
 .main-header {
-  background-color: #f0c52e;
-  opacity: 0.5;
-  display: flex;
+  background-color: rgba(240, 197, 46, 0.5);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   width: 1160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-header .container {
-  display: flex;
-  justify-content: center;
 }
 
 .main-header a{
@@ -70,7 +60,7 @@ a {
   margin-left: 59px;
   margin-top: -19px;
   display: flex;
-  order: -1;
+  padding-bottom: 35px;
 }
 
 .user-navigation {
@@ -86,12 +76,9 @@ a {
   text-align: left;
   color: #000000;
   margin: 0;
-  padding: 0;
+  padding-bottom: 50px;
   list-style: none;
-  display: flex;
-  flex-direction: row;
   width: 1160px;
-  align-items: center;
 }
 
 .search-form input::placeholder {
@@ -115,18 +102,35 @@ a {
   text-align: left;
   color: #000000;
   margin: 0;
-  padding: 0;
+  padding-bottom: 169px;
   list-style: none;
-  display: flex;
-  flex-direction: row;
   width: 1160px;
-  align-items: center;
-  order: 2;
 }
 
-.site-navigation,
-.user-navigator {
+.user-navigator,
+.site-navigation {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.user-navigator li:first-child  {
+  padding-left: 60px;
+  padding-right: 393px;
+  width: 144px;
+}
+
+.user-navigator li:nth-child(2)  {
+  padding-right: 218px;
+}
+
+.user-navigator li:nth-child(3)  {
+  padding-right: 41px;
+}
+
+.user-navigator li:nth-child(4)  {
+  padding-right: 61px;
 }
 
 .site-navigation a,
@@ -141,6 +145,24 @@ a {
 color: rgba(0, 0, 0, 0.6);
 }
 
+.site-navigation li:first-child  {
+  padding-left: 60px;
+  padding-right: 294px;
+  width: 232px;
+}
+
+.site-navigation li:nth-child(2)  {
+  padding-right: 38px;
+}
+
+.site-navigation li:nth-child(3)  {
+  padding-right: 114px;
+}
+
+.site-navigation li:nth-child(4)  {
+  padding-right: 61px;
+}
+
 .social-networks {
   list-style: none;
 }
@@ -151,8 +173,13 @@ color: rgba(0, 0, 0, 0.6);
   padding-top: 65px;
 }
 
-.main-footer .container {
+.main-footer-logo {
+  width: 163px;
+  height: 35px;
+  padding-left: 139px;
+  padding-right: 673px;
   display: flex;
+  padding-bottom: 40px;
 }
 
 .main-footer .main-logo,
@@ -162,16 +189,37 @@ color: rgba(0, 0, 0, 0.6);
   margin: 0;
 }
 
-.main-footer .main-logo {
-  width: 163px;
-}
-
-.main-footer .user-navigation {
+.main-footer .user-navigator {
   width: 312px;
+  display: flex;
 }
 
-.main-footer .main-navigation {
+.main-footer .user-navigator li:first-child  {
+  padding-left: 673px;
+  padding-right: 44px;
+  width: 232px;
+}
+
+.main-footer .user-navigator li:nth-child(2)  {
+  padding-right: 41px;
+}
+
+.main-footer .user-navigator li:nth-child(3)  {
+  padding-right: 140px;
+}
+
+.main-footer .site-navigation {
   width: 423px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer .site-navigation li:first-child  {
+  padding-right: 38px;
+}
+
+.main-footer .site-navigation li:nth-child(2)  {
+  padding-right: 38px;
 }
 
 .main-footer a{
@@ -202,11 +250,17 @@ color: rgba(0, 0, 0, 0.6);
   width: 462px;
   padding-left: 139px;
   padding-right: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .features-contacts {
   width: 511px;
-  padding-right: 140px;
+  padding-right: 139px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .features-list h2 {
@@ -234,12 +288,20 @@ color: rgba(0, 0, 0, 0.6);
   color: #464646;
 }
 
-.features-about ol {
+.features-about ul {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 2.5;
   color: #000000;
+}
+
+.features-about a {
+  padding-top: 82px;
+}
+
+.features-contacts a {
+  padding-top: 85px;
 }
 
 .main-footer-logo
@@ -384,8 +446,7 @@ color: rgba(0, 0, 0, 0.6);
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
   text-transform: none;
-
-  background-color: #f0c52e;
+  background-color: inherit;
 }
 
 .product-choice {
@@ -464,6 +525,15 @@ color: rgba(0, 0, 0, 0.6);
   text-align: left;
   color: #a6a6a6;
   opacity: 0.25;
+}
+
+.catalog  {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-right: 326px;
+  width: 232px;
 }
 
 .catalog-item a {
