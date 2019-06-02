@@ -8,13 +8,13 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
+    <div class="main-header-container">
     <div>
       <a class="main-header-logo"><img alt="Логотип магазина «Девайс»" height="35" src="./img/logo-device.svg" width="163"></a>
     </div>
     <nav class="user-navigation">
       <ul class="user-navigator">
-        <li>
+        <li class="search">
           <img alt="Картинка «Лупа»" height="16" src="./img/search.svg" width="16">
           <form action="http/device.ru" method="post" class="search-form">
             <label for="search-form"></label> <input id="search-form" name="search" placeholder="Поиск по сайту" type="search"><button type="submit"></button>
@@ -75,7 +75,7 @@
       <div class="features-about">
         <h2 class="feature-item">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEViCE работает со многими транспортными компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="transport-companies">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
@@ -84,17 +84,20 @@
       </div>
       <div class="features-contacts">
         <h2 class="contacts">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p><a class="main-header-map" href="map.html"><img alt="Адрес магазина «Девайс»" height="153" src="./img/map.jpg" width="368"></a> <a href="write-to-us.html">Напишите нам</a>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a class="main-header-map" href="map.html">
+          <img alt="Адрес магазина «Девайс»" height="222" src="./img/map.jpg" width="560"></a>
+        <a href="write-to-us.html" class="write-to">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container">
-    <div class="main-logo">
+    <div class="footer-container">
+    <div class="footer-logo">
       <a class="main-footer-logo"><img alt="Логотип магазина «Девайс»" height="35" src="./img/logo-device.svg" width="163"></a>
     </div>
-    <nav class="user-navigation">
-      <ul class="user-navigator">
+    <nav class="footer-user-navigation">
+      <ul class="footer-user-navigator">
         <li class="footer-login-link">
           <img alt="Картинка «Пользователь»" height="16" src="./img/user.svg" width="16"><a href="enter.html">Войти</a>
         </li>
@@ -106,8 +109,9 @@
         </li>
       </ul>
     </nav>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
+  </div>
+    <nav class="footer-main-navigation">
+      <ul class="footer-site-navigation">
         <li>
           <a href="delivery.html">Доставка</a>
         </li>
@@ -136,7 +140,6 @@
     </ul>
     <div class="footer-html-academy">
       <img alt="Twitter" height="35" src="./img/logo-html.svg" width="27"> <a class="html-academy-logo" href="#">HTML Академия</a>
-    </div>
     </div>
   </footer>
   <section class="modal modal-write-to-us">
