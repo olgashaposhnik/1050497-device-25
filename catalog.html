@@ -8,21 +8,23 @@
 </head>
 <body class="inner-page">
 	<header class="main-header">
+	<div class="main-header-container">
 		<div class="main-logo">
 			<a class="main-header-logo" href="index.html"><img alt="Логотип магазина «Девайс»" height="35" src="./img/logo-device.svg" width="163"></a>
 		</div>
-		<nav class="user-navigation">
-			<ul class="user-navigator">
-				<li>
+		<nav class="header-user-navigation">
+			<ul class="header-user-navigator">
+				<li class="search">
 					<img alt="Картинка «Лупа»" height="16" src="./img/search.svg" width="16">
 					<form action="http/device.ru" method="post">
-						<label for="search-form"></label> <input id="search-form" name="search" placeholder="Поиск по сайту" type="search"> <button type="submit"></button>
+						<label for="search-form"></label> <input id="search-form" name="search" placeholder="Поиск по сайту" type="search">
+						<button type="submit" class="search-button"></button>
 					</form>
 				</li>
 				<li class="user-cabinet">
 					<img alt="Картинка «Пользователь»" height="16" src="./img/user.svg" width="16"><a href="user-cabinet.html">Валентин Петухов</a>
 				</li>
-				<li class="exit-link">
+				<li class="header-exit-link">
 					<a href="exit.html">Выйти</a>
 				</li>
 				<li class="compare">
@@ -69,9 +71,11 @@
 				</li>
 			</ul>
 		</nav>
+	</div>
 	</header>
 	<main class="main content">
-		<h1 class="product-category">Моноподы для селфи</h1>
+		<div class="product-category-wrapper">
+		<h1 class="product-category"><a href="selfy-monopodes.html">Моноподы для селфи</h1>
 		<ul class="product-list">
 			<li>
 				<a href="index.html">Главная</a><img alt="Стрелка" height="7" src="./img/nav-arrow.svg" width="4">
@@ -81,9 +85,11 @@
 			</li>
 			<li class="monopodes">Моноподы для селфи</li>
 		</ul>
+		</div>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2><!-- Здесь будет форма -->
 		</section>
+		<div class="catalog-columns">
 		<aside class="product-choice">
 			<form action="https://device.ru" method="post">
 				<fieldset>
@@ -133,7 +139,9 @@
 					</article>
 				</li>
 			</ul>
+			<ul class="pagination-list"></ul>
 		</section>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="main-logo">
