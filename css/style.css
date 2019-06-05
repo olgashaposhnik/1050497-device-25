@@ -36,6 +36,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-header-container {
   width: 1160px;
   margin: 0 auto;
@@ -143,6 +148,14 @@ a {
 
 .login-link img {
   padding-right: 14px;
+}
+
+.user-navigator li:hover {
+  opacity: 0.6;
+}
+
+.user-navigator li:active {
+  opacity: 0.3;
 }
 
 .user-navigator li:nth-child(2)  {
@@ -443,6 +456,20 @@ color: rgba(0, 0, 0, 0.6);
   padding-bottom: 59px;
 }
 
+.feature-item h2 {
+  position: relative;
+}
+
+.feature-item h2::before {
+  content: "";
+  position: absolute;
+  top: 51px;
+  left: 0px;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+}
+
 .features-about p,
 .features-contacts p {
   font-family: "OpenSans", Arial, sans-serif;
@@ -502,6 +529,10 @@ color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   background-color: #f0c52e;
   border: none;
+  width: 220px;
+  height: 8px;
+  display: inline-block;
+  padding-top: 82px;
 }
 
 .write-to-us input {
@@ -694,12 +725,22 @@ color: rgba(0, 0, 0, 0.6);
   position: absolute;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header-user-navigation {
@@ -718,6 +759,7 @@ color: rgba(0, 0, 0, 0.6);
   display: flex;
   padding-left: 60px;
   padding-right: 61px;
+  justify-content: space-between;
 }
 
 .header-user-navigator li:first-child  {
