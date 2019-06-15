@@ -180,18 +180,36 @@
     </section>
     <section class="conditions">
       <h2 class="visually-hidden">Условия покупки</h2>
-      <div class="radiobutton-wrap">
-        <input checked class="conditions-button" id="delivery" name="condition-check" type="radio" value="delivery">Доставка <input class="conditions-button" id="warranty" name="condition-check" type="radio" value="warranty">Гарантия <input class="conditions-button" id="credit" name="condition-check" type="radio" value="credit">Кредит
+        <input class="visually-hidden" type="radio" id="condition-1" name="condition-check" checked>
+        <input class="visually-hidden" type="radio" id="condition-2" name="condition-check">
+        <input class="visually-hidden" type="radio" id="condition-3" name="condition-check">
+      <div class="conditions-controls">
+            <label for="condition-1">Доставка</label>
+            <label for="condition-2">Гарантия</label>
+            <label for="condition-3">Кредит</label>
       </div>
-      <div class="conditions-wrap">
-      <h3 class="condition-list">Доставка</h3>
-      <p class="condition-feature">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p><img alt="Доставка" height="165" src="./img/delivery.svg" width="136"></div>
-      <div class="conditions-wrap">
-      <h3 class="condition-list">Гарантия</h3>
-      <p class="condition-feature">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p><img alt="Гарантия" height="194" src="./img/warranty.svg" width="171"></div>
-      <div class="conditions-wrap">
-      <h3 class="condition-list">Кредит</h3>
-      <p class="condition-feature">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p><img alt="Кредит" height="194" src="./img/credit.svg" width="171"></div>
+      <ul class="conditions-list">
+        <li class="conditions-slider-item conditions-slide" id="slide1">
+          <div class="text-wrap">
+            <h3 class="condition-list">Доставка</h3>
+            <p class="condition-feature">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <img class="conditions-image" alt="Доставка" height="165" src="./img/delivery.svg" width="136">
+        </li>
+        <li class="conditions-slider-item conditions-slide" id="slide2">
+          <div class="text-wrap">
+            <h3 class="condition-list">Гарантия</h3>
+            <p class="condition-feature">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <img class="conditions-image" alt="Гарантия" height="194" src="./img/warranty.svg" width="171">
+        </li>
+        <li class="conditions-slider-item conditions-slide" id="slide3">
+          <div class="text-wrap">
+            <h3 class="condition-list">Кредит</h3>
+            <p class="condition-feature">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+          <img class="conditions-image" alt="Кредит" height="194" src="./img/credit.svg" width="171">
+        </li>
     </section>
     <section class="trademarks">
       <ul class="trademark-list">
