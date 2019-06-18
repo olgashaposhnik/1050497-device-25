@@ -573,30 +573,45 @@ color: rgba(0, 0, 0, 0.6);
   line-height: 1.33;
   letter-spacing: 3.6px;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #000000;
   display: flex;
-  width: 220px;
-  height: 8px;
-  background-color: #f0c52e;
-  display: flex;
   align-items: center;
+  position: relative;
+  width: 220px;
   justify-content: center;
 }
 
-.more:hover {
+.more::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background-color: #f0c52e;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.more:hover::before {
   width: 220px;
   height: 40px;
 }
 
 .more:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.more:active::before {
   width: 220px;
   height: 40px;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-table  {
   padding-top: 49px;
+  border: 0px;
 }
 
 .slider-table tr:nth-child(1)  {
@@ -720,13 +735,13 @@ color: rgba(0, 0, 0, 0.6);
   padding-top: 94px;
 }
 
-.Dji-color {
+.dji-color {
   background: url('../img/Dji.png');
   width: 260px;
   height: 100px;
 }
 
-.Dji-color:hover {
+.dji-color:hover {
   background: url('../img/Dji-color.png');
 }
 
@@ -740,23 +755,23 @@ color: rgba(0, 0, 0, 0.6);
   background: url('../img/spgadgets-color.png');
 }
 
-.GoPro-color {
+.gopro-color {
   background: url('../img/GoPro.png');
   width: 260px;
   height: 100px;
 }
 
-.GoPro-color:hover {
+.gopro-color:hover {
   background: url('../img/GoPro-color.png');
 }
 
-.Vive-color {
+.vive-color {
   background: url('../img/Vive.png');
   width: 260px;
   height: 100px;
 }
 
-.Vive-color:hover {
+.vive-color:hover {
   background: url('../img/Vive-color.png');
 }
 
@@ -855,7 +870,7 @@ color: rgba(0, 0, 0, 0.6);
 }
 
 .conditions-controls label:active::before {
-  width: 278px;
+  width: 280px;
   height: 40px;
   background-color: #000000;
 }
@@ -875,7 +890,7 @@ color: rgba(0, 0, 0, 0.6);
   width: 7px;
   height: 319px;
   background-color: #000000;
-  top: 319px;
+  top: 0px;
 }
 
 .condition-list {
@@ -1167,9 +1182,9 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   padding-right: 38px;
 }
 
-.Facebook svg,
-.Instagram svg,
-.Twitter svg {
+.facebook svg,
+.instagram svg,
+.twitter svg {
   opacity: 0.3;
 }
 
