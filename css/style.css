@@ -242,6 +242,17 @@ img {
 color: rgba(0, 0, 0, 0.6);
 }
 
+.unfolded-catalog {
+  display: flex;
+  margin-top: -160px;
+  padding-left: 60px;
+  z-index: 150;
+}
+
+.catalog-show:hover ~ .unfolded-catalog {
+  display: flex;
+}
+
 .site-navigation li:nth-child(1) {
   display: flex;
   align-items: baseline;
@@ -275,65 +286,53 @@ color: rgba(0, 0, 0, 0.6);
   padding: 0;
   display: flex;
   padding-top: 40px;
+  flex-wrap: wrap;
+  width: 600px;
+  background-color: #f7e296;
 }
 
-.catalog1,
-.catalog2,
-.catalog3 {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.4;
-  letter-spacing: 0.2px;
-  text-align: left;
-  color: #000000;
-  text-transform: none;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+.product-catalog li:nth-child(1),
+.product-catalog li:nth-child(4) {
+  width: 181px;
+  padding-right: 58px;
 }
 
-.catalog1 {
-  width: 240px;
+.product-catalog li:nth-child(2) {
+  width: 130px;
+  padding-right: 71px;
 }
 
-.catalog2 {
-  width: 200px;
-}
-
-.catalog3 {
-  width: 111px;
+.product-catalog li:nth-child(5) {
+  width: 230px;
+  padding-right: 71px;
 }
 
 .sliders {
-
   display: flex;
+  position: relative;
 }
 
 .slider-controls {
   position: absolute;
-  left: 1045px;
-  bottom: 145px;
+  left: 1110px;
+  bottom: 275px;
   z-index: 100;
   width: 162px;
   height: 12px;
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
-  display: flex;
+  /*
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
 .slider-controls label {
-  display: flex;
+  position: relative;
+  display: inline-block;
   width: 12px;
   height: 12px;
-  position: relative;
+  padding: 21px;
   border-radius: 50%;
   cursor: pointer;
   padding: 21px;
@@ -341,12 +340,12 @@ color: rgba(0, 0, 0, 0.6);
 
 .slider-controls label::after {
   content: "";
-  width: 8px;
-  height: 8px;
   position: absolute;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  top: 6px;
-  left: 6px;
+  left: 50%;
+  top: 50%;
   z-index: 1;
   background: #ffffff;
   border: 1px solid #000000;
@@ -376,13 +375,11 @@ color: rgba(0, 0, 0, 0.6);
   padding-left: 60px;
   background-position: 60px 0px;
   position: relative;
-  /*padding: 78px 0 80px 0;*/
 }
 
 .slider-item:nth-child(1) {
   background-image: url('../img/slide-1.png');
   background-repeat: no-repeat;
-
 }
 
 .slider-item:nth-child(2) {
@@ -419,7 +416,7 @@ color: rgba(0, 0, 0, 0.6);
   z-index: 2;
   width: 4px;
   height: 4px;
-  margin: -4px;
+  margin: 4px;
   background-color: inherit;
   border: 1px solid #000000;
   border-radius: 50%;
@@ -866,6 +863,7 @@ color: rgba(0, 0, 0, 0.6);
 .conditions-controls label:active {
   color: #f7e184;
   width: 160px;
+  text-align: center;
   justify-content: flex-start;
 }
 
@@ -1040,6 +1038,14 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   justify-content: space-between;
 }
 
+.social-networks svg:hover {
+  opacity: 0.6;
+}
+
+.social-networks svg:active {
+  opacity: 0.1;
+}
+
 .social-networks::before  {
   content: "";
   display: flex;
@@ -1094,12 +1100,34 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   display: flex;
 }
 
+.footer-container svg:hover,
+.footer-html-academy svg:hover {
+  opacity: 0.6;
+}
+
+.footer-container svg:active,
+.footer-html-academy svg:active {
+  opacity: 0.3;
+}
+
 .footer-user-navigator,
 .footer-site-navigation {
   list-style: none;
   display: flex;
   margin: 0 auto;
   padding: 0;
+}
+
+.footer-user-navigator a {
+  opacity: 0.7;
+}
+
+.footer-user-navigator a:hover {
+  opacity: 1;
+}
+
+.footer-user-navigator a:active {
+  opacity: 0.3;
 }
 
 .footer-navigation-container {
@@ -1117,6 +1145,14 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   order: 2;
   margin: 0 auto;
   padding: 0;
+}
+
+.footer-main-navigation a:hover {
+  opacity: 0.6;
+}
+
+.footer-main-navigation a:active {
+  opacity: 0.3;
 }
 
 .footer-site-navigation {
@@ -1214,14 +1250,14 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   padding-right: 140px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .features-contacts {
   width: 560px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .features h2 {
