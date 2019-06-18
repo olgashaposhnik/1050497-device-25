@@ -1254,11 +1254,28 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   background-color: #000000;
 }
 
+.transport-companies {
+  position: relative;
+}
+
 .transport-companies li::before {
-  background-image: url("../img/slider-button-empty.svg");
+  content: "";
+  position: absolute;
   width: 8px;
   height: 8px;
-  position: relative;
+  left: 0px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.transport-companies li::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .features-link,
@@ -1290,7 +1307,6 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 .write-to:hover::before {
   width: 260px;
   height: 40px;
-
   align-items: center;
   justify-content: center;
 
@@ -1300,6 +1316,11 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 .write-to:active::before {
   width: 260px;
   height: 40px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features-link:active,
+.write-to:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1327,6 +1348,7 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   color: #000000;
   margin: 0;
   padding: 0;
+  padding-left: 26px;
   list-style: none;
 }
 
