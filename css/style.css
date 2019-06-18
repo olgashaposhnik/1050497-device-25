@@ -858,16 +858,6 @@ color: rgba(0, 0, 0, 0.6);
   width: 278px;
   height: 40px;
   background-color: #000000;
-
-}
-
-.conditions-controls::after {
-  content: "";
-  position: absolute;
-  width: 7px;
-  height: 319px;
-  background-color: #000000;
-  left: auto;
 }
 
 .conditions-list {
@@ -876,6 +866,16 @@ color: rgba(0, 0, 0, 0.6);
   padding: 0;
   margin-top: -100px;
   width: 880px;
+  position: relative;
+}
+
+.conditions-list::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+  top: 319px;
 }
 
 .condition-list {
@@ -899,9 +899,9 @@ color: rgba(0, 0, 0, 0.6);
   align-items: flex-end;
 }
 
-#condition-1:checked ~ .conditions-list #slide1,
-#condition-2:checked ~ .conditions-list #slide2,
-#condition-3:checked ~ .conditions-list #slide3 {
+input[id="condition-1"]:checked ~ .conditions-list li[id="slide1"],
+input[id="condition-2"]:checked ~ .conditions-list li[id="slide2"],
+input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   display: flex;
 }
 
