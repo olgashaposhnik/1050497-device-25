@@ -179,7 +179,7 @@ img {
   justify-content: space-between;
   margin: 0;
   padding-left: 60px;
-  padding-right: 61px;
+  padding-right: 60px;
 }
 
 .search img {
@@ -249,18 +249,34 @@ color: rgba(0, 0, 0, 0.6);
   z-index: 150;
 }
 
+.product-catalog a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product-catalog a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog-show:hover ~ .unfolded-catalog {
   display: flex;
+}
+
+.catalog-show a {
+  padding-right: 16px;
+}
+
+.catalog-show svg {
+  opacity: 0.3;
 }
 
 .site-navigation li:nth-child(1) {
   display: flex;
   align-items: baseline;
-  width: 300px;
+  width: 256px;
 }
 
 .site-navigation li:nth-child(2) {
-  padding-left: 170px;
+  padding-left: 286px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -268,7 +284,7 @@ color: rgba(0, 0, 0, 0.6);
 }
 
 .site-navigation li:nth-child(4) {
-  padding-left: 114px;
+  padding-left: 99px;
 }
 
 .product-catalog {
@@ -979,7 +995,6 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 .footer-compare
 .footer-basket
 .footer-html-academy {
-  background-color: #ffc600;
   margin: 0;
 }
 
@@ -1119,15 +1134,15 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 }
 
 .footer-user-navigator a {
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-user-navigator a:hover {
-  opacity: 1;
+  color: color: rgb(255, 255, 255);
 }
 
 .footer-user-navigator a:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-navigation-container {
@@ -1180,16 +1195,16 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   fill: #ffc600;
 }
 
-.footer-login-link a  {
-  padding-left: 14px;
+.footer-login-link svg  {
+  padding-right: 14px;
 }
 
-.footer-compare a  {
-  padding-left: 10px;
+.footer-compare svg  {
+  padding-right: 10px;
 }
 
-.footer-basket a  {
-  padding-left: 12px;
+.footer-basket svg  {
+  padding-right: 12px;
 }
 
 .footer-user-navigator li:nth-child(2)  {
@@ -1292,6 +1307,9 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 
 .transport-companies {
   position: relative;
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
 }
 
 .transport-companies li::before {
@@ -1300,8 +1318,12 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   width: 8px;
   height: 8px;
   left: 0px;
+  bottom: px;
   border-radius: 50%;
   background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
 .transport-companies li::after {
@@ -1309,6 +1331,7 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   position: absolute;
   width: 5px;
   height: 5px;
+  margin: 1px;
   left: 0px;
   border-radius: 50%;
   background-color: #ffffff;
