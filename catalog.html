@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header catalog-header">
 	<div class="main-header-container">
 		<div class="main-logo">
 			<a class="main-header-logo" href="index.html"><img alt="Логотип магазина «Девайс»" height="35" src="./img/logo-device.svg" width="163"></a>
@@ -37,9 +37,10 @@
 		</nav>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li>
-          <a href="#">Каталог товаров</a><img alt="+" height="16" src="./img/plus.svg" width="16">
-        </li>
+				<li class="catalog-show">
+					<a href="catalog.html">Каталог товаров</a>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>
+				</li>
 				<li>
 					<a href="delivery.html">Доставка</a>
 				</li>
@@ -51,37 +52,17 @@
 				</li>
 			</ul>
 		</nav>
+		<section class="unfolded-catalog">
+			<ul class="product-catalog">
+				<li><a href="virtual-relity.html">Виртуальная реальность</a></li>
+				<li><a href="fitness-braceletes.html">Фитнес-браслеты</a></li>
+				<li><a href="quadcopters.html">Квадрокоптеры</a></li>
+				<li><a href="selfy-monopodes.html">Моноподы для селфи</a></li>
+				<li><a href="smart-watches.html">Умные часы</a></li>
+				<li><a href="action-camera.html">Экшн-камеры</a></li>
+			</ul>
+		</section>
 	</div>
-	<section class="unfolded-catalog">
-    <ul class="product-catalog">
-      <li class="catalog-wrapper1">
-        <ul class="catalog1">
-          <li>
-            <a href="virtual-relity.html">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="selfy-monopodes.html">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="action-camera.html">Экшн-камеры</a>
-          </li>
-        </ul>
-      </li>
-     <li class="catalog-wrapper2">
-       <ul class="catalog2">
-          <li>
-            <a href="fitness-braceletes.html">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="smart-watches.html">Умные часы</a>
-          </li>
-       </ul>
-    </li>
-     <li class="catalog3">
-      <a href="quadcopters.html">Квадрокоптеры</a>
-     </li>
-    </ul>
-  </section>
 	</header>
 	<main class="main content">
 		<div class="product-category-wrapper">

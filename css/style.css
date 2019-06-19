@@ -55,6 +55,10 @@ img {
   display: flex;
 }
 
+.catalog-header {
+  margin-bottom: 44px;
+}
+
 .main-header a{
   color: #000000;
 }
@@ -197,10 +201,12 @@ img {
   padding-right: 14px;
 }
 
+.header-user-navigator li:hover,
 .user-navigator li:hover {
   opacity: 0.6;
 }
 
+.header-user-navigator li:active,
 .user-navigator li:active {
   opacity: 0.3;
 }
@@ -246,7 +252,9 @@ color: rgba(0, 0, 0, 0.6);
   display: flex;
   margin-top: -160px;
   padding-left: 60px;
+  padding-bottom: 40px;
   z-index: 150;
+  position: relative;
 }
 
 .product-catalog a:hover {
@@ -271,7 +279,7 @@ color: rgba(0, 0, 0, 0.6);
 
 .site-navigation li:nth-child(1) {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   width: 256px;
 }
 
@@ -553,7 +561,7 @@ color: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   bottom: 9px;
   left: 265px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .slider-selfy-text p{
@@ -792,7 +800,6 @@ color: rgba(0, 0, 0, 0.6);
   background-color: #e5e5e5;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 94px;
   margin-top: 184px;
   display: flex;
 
@@ -980,7 +987,6 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   margin: 0 auto;
   padding: 0;
   padding-top: 65px;
-  margin-top: 93px;
   display: flex;
   flex-direction: column;
 }
@@ -1241,11 +1247,14 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 
 .features {
    display: flex;
-   padding-top: 93px;
-   padding-bottom: 93px;
    margin: 0 auto;
    padding: 0;
+   padding-left: 20px;
+   padding-right: 20px;
    width: 1160px;
+   padding-top: 93px;
+   padding-bottom: 93px;
+   align-items: stretch;
 }
 
 .features a {
@@ -1272,7 +1281,7 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   width: 560px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .features h2 {
@@ -1306,10 +1315,13 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 }
 
 .transport-companies {
-  position: relative;
   align-items: baseline;
   display: flex;
   flex-direction: column;
+}
+
+.transport-companies li {
+  position: relative;
 }
 
 .transport-companies li::before {
@@ -1317,8 +1329,8 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   position: absolute;
   width: 8px;
   height: 8px;
-  left: 0px;
-  bottom: px;
+  left: -26px;
+  bottom: 16px;
   border-radius: 50%;
   background-color: #e5e5e5;
   display: flex;
@@ -1329,10 +1341,11 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 .transport-companies li::after {
   content: "";
   position: absolute;
+  left: -26px;
+  bottom: 16px;
   width: 5px;
   height: 5px;
   margin: 1px;
-  left: 0px;
   border-radius: 50%;
   background-color: #ffffff;
 }
