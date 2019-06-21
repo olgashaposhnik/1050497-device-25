@@ -16,22 +16,22 @@
 			<ul class="header-user-navigator">
 				<li class="search">
 					<img alt="Картинка «Лупа»" height="16" src="./img/search.svg" width="16">
-					<form action="http/device.ru" method="post">
+					<form action="http/device.ru" class="search-form" method="post">
 						<label for="search-form"></label> <input id="search-form" name="search" placeholder="Поиск по сайту" type="search">
-						<button type="submit" class="search-button"></button>
+						<button class="search-button" type="submit"></button>
 					</form>
 				</li>
 				<li class="user-cabinet">
-					<img alt="Картинка «Пользователь»" height="16" src="./img/user.svg" width="16"><a href="user-cabinet.html">Валентин Петухов</a>
+					<img alt="Картинка «Пользователь»" height="12" src="./img/user.svg" width="13"><a href="user-cabinet.html">Валентин Петухов</a>
 				</li>
 				<li class="header-exit-link">
 					<a href="exit.html">Выйти</a>
 				</li>
 				<li class="compare">
-					<img alt="Картинка Сравнить" height="16" src="./img/compare.svg" width="16"><a href="compare.html">Сравнить</a>
+					<img alt="Картинка Сравнить" height="10" src="./img/compare.svg" width="10"><a href="compare.html">Сравнить</a>
 				</li>
 				<li class="basket">
-					<img alt="Картинка Корзина" height="16" src="./img/cart.svg" width="16"><a href="basket.html">Корзина</a>
+					<img alt="Картинка корзина" height="12" src="./img/cart.svg" width="12"><a href="basket.html">Корзина</a>
 				</li>
 			</ul>
 		</nav>
@@ -77,15 +77,31 @@
 			<li class="monopodes">Моноподы для селфи</li>
 		</ul>
 		</div>
-		<section class="filters">
-			<h2 class="visually-hidden">Фильтр товаров</h2><!-- Здесь будет форма -->
-		</section>
 		<div class="catalog-columns">
 		<aside class="product-choice">
+			<div class="filter-name-wrapper">
+			  <h3 class="filter-name">Фильтр:</h3>
+		  </div>
 			<div class="filters-list">
 			<form action="https://device.ru" method="post">
-				<fieldset>
-					<legend class="product-filter">Цвет</legend>
+				<fieldset class="filter-item">
+					<legend class="filter-legend">Стоимость</legend>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+              </div>
+							<div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+						</div>
+					</div>
+					</fieldset>
+					<fieldset class="filter-item">
+					<legend class="product-filter filter-legend">Цвет</legend>
 					<ul>
 						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-checkbox" id="black-color" name="black" type="checkbox"> <label for="black-color">Черный</label></li>
 						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" id="white-color" name="white" type="checkbox"> <label for="white-color">Белый</label></li>
@@ -93,18 +109,27 @@
 						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-checkbox" id="red-color" name="red" type="checkbox"> <label for="red-color">Красный</label></li>
 						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" id="pink-color" name="pink" type="checkbox"> <label for="pink-color">Розовый</label></li>
 					</ul>
-				</fieldset>
-				<fieldset>
-					<legend class="product-filter">Bluetooth</legend>
+				  </fieldset>
+				<fieldset class="filter-item">
+					<legend class="product-filter filter-legend">Bluetooth</legend>
 					<ul>
 						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-checkbox" id="with-bluetooth" name="bluetooth" type="radio" value="with-bluetooth"> <label for="with-bluetooth">Есть</label></li>
 						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-checkbox" id="without-bluetooth" name="bluetooth" type="radio" value="without-bluetooth"> <label for="without-bluetooth">Нет</label></li>
 					</ul>
-				</fieldset><button class="filter-button button" type="submit">Показать</button>
+				</fieldset>
+				<button class="filter-button button" type="submit">Показать</button>
 			</form>
 		</aside>
 		<section class="catalog">
 			<h2 class="visually-hidden">Каталог моноподов</h2>
+				<div class="filter-header">
+					<h3 class="filter-name">Сортировка:</h3>
+					<a href="price.html">По цене</a>
+					<a href="type.html">По типу</a>
+					<a href="popular.html">По популярности</a>
+					<img alt="Стрелка вверх" height="10" src="./img/icon-up-dir.svg" width="11">
+					<img alt="Стрелка вверх" height="10" src="./img/icon-down-dir.svg" width="11">
+	      </div>
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<article class="catalog-item-image">
