@@ -278,12 +278,12 @@ color: rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-show:hover ~ .unfolded-catalog {
+.catalog-show:hover + .unfolded-catalog {
   display: flex;
 }
 
-.catalog-show a {
-  padding-right: 16px;
+.catalog-show:hover {
+  display: flex;
 }
 
 .catalog-show svg {
@@ -310,6 +310,7 @@ color: rgba(0, 0, 0, 0.6);
 
 .product-catalog {
   font-family: "OpenSans", Arial, sans-serif;
+  text-transform: none;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
@@ -331,11 +332,21 @@ color: rgba(0, 0, 0, 0.6);
   width: 1040px;
   background-color: #f7e296;
   position: absolute;
+  z-index: 2;
 }
 
 .main-product-catalog {
   bottom: -90px;
   left: 0px;
+}
+
+.product-catalog-show {
+  display: flex;
+  align-items: baseline;
+}
+
+.product-catalog-show svg {
+  padding-left: 16px;
 }
 
 .product-catalog-show:hover + .product-catalog {
@@ -614,8 +625,7 @@ color: rgba(0, 0, 0, 0.6);
   margin: 0;
 }
 
-.more,
-.filter-button {
+.more {
   margin: 0;
   padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
@@ -636,8 +646,7 @@ color: rgba(0, 0, 0, 0.6);
   justify-content: center;
 }
 
-.more::before,
-.filter-button::before {
+.more::before {
   content: "";
   position: absolute;
   width: 220px;
@@ -649,19 +658,16 @@ color: rgba(0, 0, 0, 0.6);
   justify-content: flex-start;
 }
 
-.more:hover::before,
-.filter-button:hover::before {
+.more:hover::before {
   width: 220px;
   height: 40px;
 }
 
-.more:active,
-.filter-button:active {
+.more:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.more:active::before,
-.filter-button:active::before {
+.more:active::beforee {
   width: 220px;
   height: 40px;
 }
@@ -1662,6 +1668,7 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
   padding-top: 50px;
+  margin-bottom: 20px;
 }
 
 .product-choice fieldset {
@@ -1711,6 +1718,22 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox + label:hover::before {
+  content: "";
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  border: 0px;
+  left: -40px;
+  bottom: 12px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.6;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1811,7 +1834,7 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   display: flex;
 }
 
-.catalog-item-button {
+.catalog-item-button  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1830,7 +1853,26 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   z-index: 1;
 }
 
-.catalog-item-button::before {
+.filter-button  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 44px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  z-index: 1;
+}
+
+.catalog-item-button::before,
+.filter-button::before  {
   content: "";
   position: absolute;
   display: flex;
@@ -1843,7 +1885,9 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 }
 
 .catalog-item-button:hover::before,
-.catalog-item-button:active::before {
+.catalog-item-button:active::before,
+.filter-button:hover::before,
+.filter-button:active::before {
   content: "";
   position: absolute;
   display: flex;
@@ -1855,7 +1899,8 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   z-index: -1;
 }
 
-.catalog-item-button:active {
+.catalog-item-button:active,
+.filter-button:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1897,6 +1942,9 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   display: flex;
 }
 
+.catalog-image-hover:hover {
+  display: flex;
+}
 
 .pagination {
   display: flex;
@@ -1919,6 +1967,14 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
 
 .pagination-item a {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .pagination-item-current a {
