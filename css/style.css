@@ -1588,6 +1588,29 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   z-index: 2;
 }
 
+.modal-map {
+  display: flex;
+  width: 960px;
+  padding: 0;
+  margin: 0 auto;
+  width: 960px;
+  height: 559px;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  
+  position: relative;
+}
+
+.interactive-map  {
+  width: 960px;
+  height: 559px;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  border: 0;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
 .write-to-us {
   display: flex;
   flex-wrap: wrap;
