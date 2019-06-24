@@ -318,7 +318,7 @@
     <h2 class="visually-hidden">Обратная связь</h2>
     <form action="http://device.ru" class="write-to-us" method="post">
       <p><label class="input-name" for="user-name">Ваше имя:</label> <input class="enter-user-name" id="user-name" name="name" placeholder="Имя Фамилия" type="text"></p>
-      <p><label class="input-name" for="user-email">Ваш e-mail:</label> <input class="enter-user-email" id="user-email" name="password" placeholder="email@example.com" type="email"></p>
+      <p><label class="input-name" for="user-email">Ваш e-mail:</label> <input class="enter-user-email" id="user-email" name="email" placeholder="email@example.com" type="email"></p>
       <p><label class="input-letter" for="letter-text">Текст письма:</label> <input class="enter-letter-text" id="letter-text" name="text" placeholder="В свободной форме" type="text"></p>
       <button class="modal-button" type="submit">Отправить</button>
     </form>
@@ -332,5 +332,91 @@
     </p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
+  <script>
+  var link = document.querySelector(".write-to");
+
+  var popup = document.querySelector(".modal-write-to-us");
+  var close = popup.querySelector(".modal-close");
+
+  var form = popup.querySelector("form");
+  var name = popup.querySelector("[name=name]");
+  var email = popup.querySelector("[name=email]");
+  var text = popup.querySelector("[name=text]");
+
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+
+    if (storage) {
+      name.value = storage;
+      email.focus();
+    } else {
+      name.focus();
+    }
+  });
+
+  close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!name.value || !email.value || !text.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+      console.log("Введите имя, e-mail и текст письма");
+    } else {
+      if (isStorageSupport) {
+      localStorage.setItem("name", name.value);
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+  var mapLink = document.querySelector(".main-header-map");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
+  </script>
 </body>
 </html>
