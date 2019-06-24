@@ -1001,7 +1001,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label {
   color: #f7e184;
   width: 160px;
   text-align: center;
-  justify-content: flex-start;
 }
 
 input[id="condition-1"]:checked ~ .conditions-controls-wrapper label::before,
@@ -1010,6 +1009,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   width: 280px;
   height: 40px;
   background-color: #000000;
+  left: 0;
 }
 
 .condition-feature {
