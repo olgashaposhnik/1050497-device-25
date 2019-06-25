@@ -1635,6 +1635,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   margin: 0 auto;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   position: relative;
+  bottom: 1185px;
 }
 
 .modal-map {
@@ -1646,6 +1647,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   height: 559px;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   position: relative;
+  bottom: 384px;
 }
 
 .modal-map p,
