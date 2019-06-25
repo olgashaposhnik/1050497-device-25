@@ -133,6 +133,7 @@ img {
   padding-top: 24.5px;
   padding-bottom: 24.5px;
   padding-left: 36px;
+  width: 356px;
 }
 
 .search-form input::placeholder {
