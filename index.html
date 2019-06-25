@@ -168,9 +168,9 @@
         <input class="visually-hidden" type="radio" id="condition-3" name="condition-check">
       <div class="conditions-controls-wrapper">
         <div class="conditions-controls">
-            <label for="condition-1">Доставка</label>
-            <label for="condition-2">Гарантия</label>
-            <label for="condition-3">Кредит</label>
+            <label class="conditions-controls-1" for="condition-1">Доставка</label>
+            <label class="conditions-controls-2" for="condition-2">Гарантия</label>
+            <label class="conditions-controls-3" for="condition-3">Кредит</label>
         </div>
       </div>
       <ul class="conditions-list">
@@ -378,7 +378,7 @@
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
       console.log("Введите имя, e-mail и текст письма");
-    } else {
+    } else
       if (isStorageSupport) {
       localStorage.setItem("name", name.value);
     }

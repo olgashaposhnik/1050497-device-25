@@ -352,10 +352,11 @@ color: rgba(0, 0, 0, 0.6);
   margin: 0;
   padding: 0;
   display: none;
+  padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 40px;
-  bottom: -10px;
+  bottom: 200px;
   left: 0px;
   flex-wrap: wrap;
   width: 1040px;
@@ -995,17 +996,17 @@ input[id="condition-3"]:checked ~ .conditions-list li[id="slide3"] {
   display: flex;
 }
 
-input[id="condition-1"]:checked ~ .conditions-controls-wrapper label,
-input[id="condition-2"]:checked ~ .conditions-controls-wrapper label,
-input[id="condition-3"]:checked ~ .conditions-controls-wrapper label {
+input[id="condition-1"]:checked ~ .conditions-controls-wrapper .conditions-controls-1,
+input[id="condition-2"]:checked ~ .conditions-controls-wrapper .conditions-controls-2,
+input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-controls-3 {
   color: #f7e184;
   width: 160px;
   text-align: center;
 }
 
-input[id="condition-1"]:checked ~ .conditions-controls-wrapper label::before,
-input[id="condition-2"]:checked ~ .conditions-controls-wrapper label::before,
-input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
+input[id="condition-1"]:checked ~ .conditions-controls-wrapper .conditions-controls-1::before,
+input[id="condition-2"]:checked ~ .conditions-controls-wrapper .conditions-controls-2::before,
+input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-controls-3::before {
   width: 280px;
   height: 40px;
   background-color: #000000;
@@ -1176,10 +1177,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   width: 1160px;
 }
 
-.footer-container svg {
-  fill: #ffc600;
-}
-
 .main-footer-logo svg {
   width: 163px;
   height: 35px;
@@ -1196,12 +1193,10 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   display: flex;
 }
 
-.footer-container svg:hover,
 .footer-html-academy svg:hover {
   opacity: 0.6;
 }
 
-.footer-container svg:active,
 .footer-html-academy svg:active {
   opacity: 0.3;
 }
@@ -1216,14 +1211,17 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
 
 .footer-user-navigator a {
   color: rgba(255, 255, 255, 0.7);
+  fill: rgba(255, 198, 0, 1);
 }
 
 .footer-user-navigator a:hover {
   color: rgb(255, 255, 255);
+  fill: rgba(255, 198, 0, 0.6);
 }
 
 .footer-user-navigator a:active {
   color: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 198, 0, 0.3);
 }
 
 .footer-navigation-container {
@@ -1268,12 +1266,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.footer-login-link svg,
-.footer-compare svg,
-.footer-basket svg {
-  fill: #ffc600;
 }
 
 .footer-login-link svg  {
@@ -2010,21 +2002,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   background-position: 0 0;
 }
 
-.filter-input-checkbox + label:hover::before {
-  content: "";
-  position: absolute;
-
-  width: 23px;
-  height: 23px;
-
-  border: 0px;
-  left: -40px;
-  bottom: 12px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.6;
-}
 
 .filter-input-checkbox:checked + label::after {
   content: "";
@@ -2039,73 +2016,42 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  z-index: 2;
 }
 
-.filter-input-checkbox:checked + label:hover::before {
-  content: "";
-  position: absolute;
-
-  width: 23px;
-  height: 23px;
-
-  border: 0px;
-  left: -40px;
-  bottom: 12px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.filter-input-checkbox + label:hover::before {
   opacity: 0.6;
 }
 
+.filter-input-checkbox:checked + label:hover::after {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:checked + label:hover::before {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox + label:active::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox + label:active::after {
+  opacity: 1;
+}
+
 .filter-input-checkbox:checked + label:active::before {
-  content: "";
-  position: absolute;
-
-  width: 23px;
-  height: 23px;
-
-  border: 0px;
-  left: -40px;
-  bottom: 12px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   opacity: 1;
 }
 
 .filter-input-checkbox:checked + label:active::after {
-  content: "";
-  position: absolute;
-
-  width: 23px;
-  height: 23px;
-
-  border: 0px;
-  left: -40px;
-  bottom: 12px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   opacity: 1;
-  z-index: 2;
 }
 
-.filter-input-checkbox:checked + label:hover::after {
-  content: "";
-  position: absolute;
+.filter-input-checkbox:disabled + label::after {
+  opacity: 0.25;
+}
 
-  width: 23px;
-  height: 23px;
-
-  border: 0px;
-  left: -40px;
-  bottom: 12px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.6;
-  z-index: 2;
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.25;
 }
 
 .filter-input-radio + label::before {
@@ -2136,6 +2082,18 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper label::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-radio + label:hover::before {
+  opacity: 0.6;
+}
+
+.filter-input-radio:checked + label:hover::before {
+  opacity: 0.6;
+}
+
+.filter-input-radio:checked + label:hover::after {
+  opacity: 0.6;
 }
 
 .filter-option-input:disabled + label {
@@ -2403,8 +2361,9 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: flex;
   padding-left: 60px;
-  padding-right: 61px;
+  padding-right: 60px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-user-navigator li:first-child  {
