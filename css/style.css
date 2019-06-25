@@ -161,6 +161,10 @@ img {
   display: block;
 }
 
+.search-button:hover {
+  display: block;
+}
+
 .search-form input:focus {
   display: flex;
 }
@@ -187,6 +191,7 @@ img {
 .search-button:active {
   border: solid 2px #000000;
   background-color: #000000;
+  display: block;
 }
 
 .search-button:hover {
@@ -214,6 +219,10 @@ img {
   list-style: none;
   width: 1160px;
   display: flex;
+}
+
+.main-catalog-navigation {
+  padding-bottom: 47px;
 }
 
 .user-navigator,
@@ -352,11 +361,11 @@ color: rgba(0, 0, 0, 0.6);
   margin: 0;
   padding: 0;
   display: none;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 40px;
-  bottom: 200px;
+  bottom: -115px;
   left: 0px;
   flex-wrap: wrap;
   width: 1040px;
@@ -366,8 +375,9 @@ color: rgba(0, 0, 0, 0.6);
 }
 
 .main-product-catalog {
-  bottom: -10px;
+  position: absolute;
   left: 0px;
+  bottom: 0px;
 }
 
 .product-catalog-show {
@@ -380,6 +390,10 @@ color: rgba(0, 0, 0, 0.6);
 }
 
 .product-catalog-show:hover + .product-catalog {
+  display: flex;
+}
+
+.product-catalog:hover {
   display: flex;
 }
 
@@ -1656,7 +1670,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 .modal-close {
-  position: relative;
+  position: absolute;
   width: 55px;
   height: 55px;
   opacity: 0.5;
@@ -1672,6 +1686,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 
   cursor: pointer;
   outline:none;
+  top: 22px;
 }
 
 .modal-close::before {
@@ -2027,19 +2042,15 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 .filter-input-checkbox:checked + label:hover::before {
-  opacity: 0.6;
+  content: none;
 }
 
 .filter-input-checkbox + label:active::before {
   opacity: 1;
 }
 
-.filter-input-checkbox + label:active::after {
-  opacity: 1;
-}
-
 .filter-input-checkbox:checked + label:active::before {
-  opacity: 1;
+  content: none;
 }
 
 .filter-input-checkbox:checked + label:active::after {
@@ -2089,7 +2100,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 .filter-input-radio:checked + label:hover::before {
-  opacity: 0.6;
+  content: none;
 }
 
 .filter-input-radio:checked + label:hover::after {
@@ -2492,16 +2503,23 @@ color: rgba(0, 0, 0, 0.3);
   line-height: 1.29;
   letter-spacing: normal;
   text-align: left;
-  color: #000000;
   padding-right: 55px;
-}
-
-.filter-name .filter-type {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .filter-name .filter-type-current {
   color: #000000;
+}
+
+.filter-type {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter-type:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-type:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .filter-header {
@@ -2525,20 +2543,6 @@ color: rgba(0, 0, 0, 0.3);
   left: 760px;
   height: 68px;
   z-index: -1;
-}
-
-.filter-header a {
-  padding: 0;
-  margin: 0;
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
 }
 
 .filter-header h3 {
@@ -2581,10 +2585,19 @@ color: rgba(0, 0, 0, 0.3);
 
 .filter-navigation li {
   padding-left: 19px;
+  opacity: 0.2;
 }
 
-.filter-nav-current svg {
-  opacity: 0.2;
+.filter-navigation li:hover {
+  opacity: 0.4;
+}
+
+.filter-navigation li:active {
+  opacity: 1;
+}
+
+.filter-navigation .filter-nav-current {
+  opacity: 1;
 }
 
 .filters-list {
