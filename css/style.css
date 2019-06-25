@@ -475,7 +475,6 @@ color: rgba(0, 0, 0, 0.6);
   padding-right: 20px;
   margin-top: -111px;
   width: 1160px;
-
 }
 
 .slider-item {
@@ -514,6 +513,22 @@ input[id="product-3"]:checked ~ .slider-list .slider-item:nth-child(3) {
 input[id="product-1"]:checked ~ .slider-controls .slider-controls-item--1::before,
 input[id="product-2"]:checked ~ .slider-controls .slider-controls-item--2::before,
 input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: 4px;
+  background-color: inherit;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.slider-controls .slider-controls-item--1:hover ~ .slider-controls .slider-controls-item--1::before,
+.slider-controls .slider-controls-item--2:hover ~ .slider-controls .slider-controls-item--2::before,
+.slider-controls .slider-controls-item--3:hover ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1634,8 +1649,12 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   padding: 0;
   margin: 0 auto;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-  position: relative;
-  bottom: 1185px;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  margin-left: -480px;
+  margin-bottom: -258px;
+  z-index: 150;
 }
 
 .modal-map {
@@ -1646,8 +1665,12 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   width: 960px;
   height: 559px;
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-  position: relative;
-  bottom: 384px;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  margin-left: -480px;
+  margin-bottom: -280px;
+  z-index: 150;
 }
 
 .modal-map p,
