@@ -10,7 +10,7 @@
 	<header class="main-header catalog-header">
 	<div class="main-header-container">
 		<div class="main-logo">
-			<a class="main-header-logo" href="index.html"><img alt="Логотип магазина «Девайс»" height="35" src="./img/logo-device.svg" width="163"></a>
+			<a class="main-header-logo main-catalog-logo" href="index.html"><img alt="Логотип магазина «Девайс»" height="35" src="./img/logo-device.svg" width="163"></a>
 		</div>
 		<nav class="header-user-navigation">
 			<ul class="header-user-navigator">
@@ -67,10 +67,10 @@
 		<h1 class="product-category"><a>Моноподы для селфи</a></h1>
 		<ul class="product-list">
 			<li>
-				<a href="index.html">Главная</a><img alt="Стрелка" height="7" src="./img/nav-arrow.svg" width="4">
+				<a class="product-list-main" href="index.html">Главная</a><img alt="Стрелка" height="7" src="./img/nav-arrow.svg" width="4">
 			</li>
 			<li>
-				<a href="catalog.html">Каталог товаров</a><img alt="Стрелка" height="7" src="./img/nav-arrow.svg" width="4">
+				<a class="product-list-catalog" href="catalog.html">Каталог товаров</a><img alt="Стрелка" height="7" src="./img/nav-arrow.svg" width="4">
 			</li>
 			<li class="monopodes">Моноподы для селфи</li>
 		</ul>
@@ -93,13 +93,13 @@
               <div class="toggle toggle-max"></div>
 						</div>
 						<div class="price-controls">
-							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-              <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+							<label class="min-price">от <input name="min-price" type="text" value=" 0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value=" 5000"></label>
 						</div>
 					</div>
 					</fieldset>
 					<fieldset class="filter-item">
-					<legend class="product-filter filter-legend">Цвет</legend>
+					<legend class="product-filter filter-legend color-legend">Цвет</legend>
 					<ul>
 						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-checkbox" id="black-color" name="black" type="checkbox"> <label for="black-color">Черный</label></li>
 						<li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" id="white-color" name="white" type="checkbox"> <label for="white-color">Белый</label></li>
@@ -109,10 +109,10 @@
 					</ul>
 				  </fieldset>
 				<fieldset class="filter-item">
-					<legend class="product-filter filter-legend">Bluetooth</legend>
+					<legend class="product-filter filter-legend bluetooth-legend">Bluetooth</legend>
 					<ul>
 						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-radio" id="with-bluetooth" name="bluetooth" type="radio" value="with-bluetooth"> <label for="with-bluetooth">Есть</label></li>
-						<li class="filter-option"><input checked class="visually-hidden filter-input filter-input-radio" id="without-bluetooth" name="bluetooth" type="radio" value="without-bluetooth"> <label for="without-bluetooth">Нет</label></li>
+						<li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" id="without-bluetooth" name="bluetooth" type="radio" value="without-bluetooth"> <label for="without-bluetooth">Нет</label></li>
 					</ul>
 				</fieldset>
 				<button class="filter-button button" type="submit">Показать</button>
