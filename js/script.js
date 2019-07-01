@@ -4,7 +4,7 @@
   var close = popup.querySelector(".modal-close");
 
   var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=name]");
+  var popupName = popup.querySelector("[name=name]");
   var email = popup.querySelector("[name=email]");
   var text = popup.querySelector("[name=text]");
 
@@ -41,7 +41,7 @@
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
-      console.log("Введите имя, e-mail и текст письма");
+      console.log("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ, e-mail пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ");
     } else
       if (isStorageSupport) {
       localStorage.setItem("name", name.value);
@@ -75,7 +75,7 @@
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      evt.preventDefault();    
+      evt.preventDefault();
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
       }
