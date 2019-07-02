@@ -144,7 +144,7 @@ img {
   text-align: left;
   color: rgba(0, 0, 0, 1);
   text-transform: none;
-  background-color: inherit;
+  background-color: transparent;
   border: 0px;
   outline:none;
   padding-top: 24.5px;
@@ -316,8 +316,8 @@ img {
 }
 
 .user-navigator li:first-child  {
-  padding-right: 385px;
-  width: 155px;
+  padding-right: 184px;
+  width: 356px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -876,6 +876,11 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   height: 8px;
   background-color: #f0c52e;
   z-index: -1;
+  left: 0;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1263,6 +1268,7 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   text-align: center;
   color: #000000;
   cursor: pointer;
+  position: relative;
 }
 
 .conditions-controls label::before {
@@ -1273,7 +1279,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   border: 0px;
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 53px;
+  top: 50px;
+  left: 0;
   position: absolute;
   z-index: -1;
 }
@@ -1281,6 +1288,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 .conditions-controls label:hover::before {
   width: 160px;
   height: 40px;
+  top: 35px;
+  position: absolute;
 }
 
 .conditions-list {
@@ -1349,6 +1358,8 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   height: 40px;
   background-color: #000000;
   left: 0;
+  position: absolute;
+  top: 50%;
 }
 
 .condition-feature {
@@ -1905,10 +1916,10 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 .transport-companies {
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1968,6 +1979,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 
 .features-link,
 .write-to {
+  position: relative;
   width: 260px;
   text-align: center;
   vertical-align: middle;
@@ -1990,6 +2002,11 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 .features-link::before,
 .write-to::before {
   content: "";
+  left: 0;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 260px;
   height: 8px;
   background-color: #f0c52e;
@@ -2067,6 +2084,8 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   padding: 0;
   padding-left: 35px;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .features-about a {
@@ -2560,6 +2579,11 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   width: 200px;
   height: 8px;
   z-index: -1;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .modal-button:hover::before,
@@ -2933,7 +2957,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
           align-items: center;
   padding: 0;
   margin: 0;
-  padding-top: 39px;
+  margin-top: 39px;
   width: 200px;
   position: relative;
   background-color: transparent;
@@ -2965,6 +2989,11 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   width: 200px;
   height: 8px;
   z-index: -1;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .catalog-item-button:hover::before,
@@ -3245,8 +3274,8 @@ input[type="radio"].visually-hidden {
 }
 
 .header-user-navigator li:first-child  {
-  padding-right: 323px;
-  width: 155px;
+  padding-right: 184px;
+  width: 356px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3278,7 +3307,6 @@ input[type="radio"].visually-hidden {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding-left: 60px;
 }
 
 .header-exit-link a {
