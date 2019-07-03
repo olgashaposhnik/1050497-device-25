@@ -157,12 +157,6 @@ img {
   padding-left: 38px;
 }
 
-.search-form label {
-  display: flex;
-  width: 16px;
-  align-items: center;
-}
-
 .search-form input[placeholder] {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
@@ -192,10 +186,14 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-form input:focus {
+.search-form-input:focus + label::after {
+  content: "";
+  position: absolute;
   border-bottom: 2px solid #000000;
   width: 356px;
   color: rgba(0, 0, 0, 1);
+  bottom: 0;
+  left: 0;
 }
 
 .search-form input:focus + .search-button {
@@ -211,6 +209,13 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.search-form label {
+  display: flex;
+  width: 16px;
+  align-items: center;
+  position: relative;
 }
 
 .search-form .search-button {
