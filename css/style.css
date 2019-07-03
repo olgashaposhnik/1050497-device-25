@@ -124,6 +124,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  min-width: 356px;
 }
 
 /*
@@ -137,8 +138,7 @@ img {
 }*/
 
 .search-form .search-form-input {
-  width: auto;
-  height: 15px;
+  flex-grow: 1;
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -153,9 +153,7 @@ img {
   border: 0px;
   outline:none;
   width: 356px;
-  padding-top: 24.5px;
-  padding-bottom: 24.5px;
-  padding-left: 38px;
+  width: 217px;
 }
 
 .search-form input[placeholder] {
@@ -166,7 +164,6 @@ img {
   color: rgba(0, 0, 0, 0.3);
   border: 0;
   padding: 0;
-  padding-left: 38px;
 }
 
 .search-form input:hover::-webkit-input-placeholder {
@@ -196,11 +193,11 @@ img {
 }
 
 .search-form input:focus ~ .search-button {
-  display: block;
+  visibility: visible;
 }
 
 .search-button:hover {
-  display: block;
+  visibility: visible;
 }
 
 .search-form input:focus {
@@ -215,13 +212,14 @@ img {
   width: 16px;
   align-items: center;
   position: relative;
-  margin-left: -353px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  order: -1;
+  align-self: stretch;
+  margin-right: 22px;
+  flex-shrink: 0;
 }
 
 .search-form .search-button {
-  display: none;
+  visibility: hidden;
   width: 85px;
   border: solid 2px #000000;
   background-color: transparent;
@@ -234,18 +232,16 @@ img {
   letter-spacing: 0.2px;
   text-align: center;
   color: #000000;
-  padding: 0;
+  padding:7px 0;
   margin: 0;
-  margin-left: 275px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  flex-shrink: 0;
 }
 
 .search-button:hover,
 .search-button:active {
   border: solid 2px #000000;
   background-color: #000000;
-  display: block;
+  visibility: visible;
 }
 
 .search-button:hover {
@@ -307,7 +303,7 @@ img {
 }
 
 .user-navigator li:first-child  {
-  padding-right: 155px;
+  margin-right: auto;
   width: 441px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -351,7 +347,7 @@ img {
 }
 
 .user-navigator li:nth-child(3)  {
-  padding-left: 225px;
+  padding-left: 216px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -367,8 +363,8 @@ img {
 }
 
 .user-navigator li:nth-child(4)  {
-  padding-left: 52px;
-  padding-right: 6px;
+  margin-right: -2px;
+  padding-left: 41px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
