@@ -129,9 +129,12 @@ img {
   background-image: url("../img/search.svg");
   background-position: 2px center;
   background-repeat: no-repeat;
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
+  padding-left: 38px;
 }
 
-.search-form input {
+.search-form .search-form-input {
   width: auto;
   height: 15px;
   font-family: "OpenSans", Arial, sans-serif;
@@ -147,13 +150,13 @@ img {
   background-color: transparent;
   border: 0px;
   outline:none;
+  width: 356px;
   padding-top: 24.5px;
   padding-bottom: 24.5px;
   padding-left: 38px;
-  width: 356px;
 }
 
-.search-form input::-webkit-input-placeholder {
+.search-form input[placeholder] {
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -161,36 +164,9 @@ img {
   color: rgba(0, 0, 0, 0.3);
   border: 0;
   padding: 0;
-}
-
-.search-form input:-ms-input-placeholder {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
-  border: 0;
-  padding: 0;
-}
-
-.search-form input::-ms-input-placeholder {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
-  border: 0;
-  padding: 0;
-}
-
-.search-form input::placeholder {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
-  border: 0;
-  padding: 0;
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
+  padding-left: 38px;
 }
 
 .search-form input:hover::-webkit-input-placeholder {
@@ -212,8 +188,6 @@ img {
 .search-form input:focus {
   border-bottom: 2px solid #000000;
   width: 356px;
-  padding-top: 23.5px;
-  padding-bottom: 23.5px;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -236,7 +210,7 @@ img {
   display: none;
   width: 85px;
   border: solid 2px #000000;
-  background-color: inherit;
+  background-color: rgba(240, 197, 46, 0.5);
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -444,7 +418,7 @@ color: rgba(0, 0, 0, 0.6);
 }
 
 .site-navigation li:nth-child(2) {
-  padding-left: 285px;
+  padding-left: 283px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -3411,11 +3385,12 @@ color: rgba(0, 0, 0, 0.3);
   content: "";
   position: absolute;
   background-color: #d9d9d9;
-  width: 300px;
+  width: 50vw;
   right: 328px;
   height: 68px;
   bottom: 0px;
   z-index: -1;
+  top: 0;
 }
 
 .filter-name-wrapper .filter {
@@ -3503,6 +3478,7 @@ color: rgba(0, 0, 0, 0.3);
   left: 760px;
   height: 68px;
   z-index: -1;
+  top: 0;
 }
 
 .filter-header h3 {
