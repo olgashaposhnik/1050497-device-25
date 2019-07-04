@@ -621,9 +621,6 @@ color: rgba(0, 0, 0, 0.6);
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 1040px;
   padding-right: 60px;
   padding-left: 60px;
@@ -631,22 +628,24 @@ color: rgba(0, 0, 0, 0.6);
   position: relative;
 }
 
-.slider-item:nth-child(1) {
-  background-image: url('../img/slide-1.png');
-  background-repeat: no-repeat;
-  background-position: 90px 10px;
+.slider-image {
+  display: flex;
+  width: 540px;
 }
 
-.slider-item:nth-child(2) {
-  background-image: url('../img/slide-2.png');
-  background-repeat: no-repeat;
-  background-position: 60px 0px;
+.selfy-image {
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
-.slider-item:nth-child(3) {
-  background-image: url('../img/slide-3.png');
-  background-repeat: no-repeat;
-  background-position: 30px 90px;
+.fytness-image {
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.quadrocopter-image {
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 input[id="product-1"]:checked ~ .slider-list .slider-item:nth-child(1),
@@ -700,7 +699,6 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 540px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
