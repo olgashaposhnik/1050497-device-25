@@ -157,9 +157,25 @@ img {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
   border: 0;
   padding: 0;
+}
+
+.search-form input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form input:hover::-webkit-input-placeholder {
@@ -176,6 +192,22 @@ img {
 
 .search-form input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form input:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-form input:focus:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-form input:focus::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-form input:focus::placeholder {
+  color: rgba(0, 0, 0, 1);
 }
 
 .search-form-input:focus + label::after {
@@ -324,6 +356,13 @@ img {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.user-navigator li:nth-child(2),
+.user-navigator li:nth-child(3),
+.user-navigator li:nth-child(4) {
+  display: flex;
+  max-width: 120px;
 }
 
 .login-link img {
@@ -1168,13 +1207,13 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 }
 
 .dji-color {
-  background: url('../img/Dji.png');
+  background: url('../img/dji.png');
   width: 260px;
   height: 100px;
 }
 
 .dji-color:hover {
-  background: url('../img/Dji-color.png');
+  background: url('../img/dji-color.png');
 }
 
 .spgadgets-color {
@@ -1188,23 +1227,23 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 }
 
 .gopro-color {
-  background: url('../img/GoPro.png');
+  background: url('../img/gopro.png');
   width: 260px;
   height: 100px;
 }
 
 .gopro-color:hover {
-  background: url('../img/GoPro-color.png');
+  background: url('../img/gopro-color.png');
 }
 
 .vive-color {
-  background: url('../img/Vive.png');
+  background: url('../img/vive.png');
   width: 260px;
   height: 100px;
 }
 
 .vive-color:hover {
-  background: url('../img/Vive-color.png');
+  background: url('../img/vive-color.png');
 }
 
 .vive-wrapper {
@@ -3007,7 +3046,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   background-repeat:no-repeat;
   border: none;
   cursor: pointer;
-  overflow: hidden;
   outline: none;
   z-index: 1;
 }
@@ -3034,7 +3072,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   background-repeat:no-repeat;
   border: none;
   cursor: pointer;
-  overflow: hidden;
   outline: none;
   z-index: 1;
 }
@@ -3056,7 +3093,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
       -ms-flex-align: center;
           align-items: center;
   background-color: #f0c52e;
-  width: 200px;
+  width: 220px;
   height: 8px;
   z-index: -1;
   left: 0;
@@ -3085,7 +3122,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
       -ms-flex-align: center;
           align-items: center;
   background-color: #f0c52e;
-  width: 200px;
+  width: 220px;
   height: 40px;
   z-index: -1;
 }
