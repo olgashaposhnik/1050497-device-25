@@ -1,22 +1,22 @@
 @font-face {
     font-family: "Gilroy";
     font-weight: 800;
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-    url('../fonts/gilroyextrabold.woff') format('woff');
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
     }
 
 @font-face {
     font-family: "Gilroy";
     font-weight: 300;
-    src: url('../fonts/gilroylight.woff2') format('woff2'),
-    url('../fonts/gilroylight.woff') format('woff');
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
     }
 
 @font-face {
     font-family: "OpenSans";
     font-weight: 300;
-    src: url('../fonts/opensanslight.woff2') format('woff2'),
-    url('../fonts/opensanslight.woff') format('woff');
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
     }
 
 html {
@@ -1064,60 +1064,41 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   position: absolute;
   top: 52px;
   left: 31px;
-  /*
-  background-image: url("../img/virtual.svg");
-  background-repeat: no-repeat;
-  background-position: 49% 50%;*/
 }
 
 .img-wrapper-monopodes::before {
   content: url(../img/monopodes.svg);
   position: absolute;
   top: 41px;
-  left: 38px;/*
-  background-image: url("../img/monopodes.svg");
-  background-repeat: no-repeat;
-  background-position: 51% 95%;*/
+  left: 38px;
 }
 
 .img-wrapper-action::before {
   content: url(../img/action.svg);
   position: absolute;
   top: 38px;
-  left: 49px;/*
-  background-image: url("../img/action.svg");
-  background-repeat: no-repeat;
-  background-position: 55% 52%;*/
+  left: 49px;
 }
 
 .img-wrapper-fitness::before {
   content: url(../img/fitness.svg);
   position: absolute;
   top: 50px;
-  left: 28px;/*
-  background-image: url("../img/fitness.svg");
-  background-repeat: no-repeat;
-  background-position: 53% 53%;*/
+  left: 28px;
 }
 
 .img-wrapper-watches::before {
   content: url(../img/watches.svg);
   position: absolute;
   top: 32px;
-  left: 55px;/*
-  background-image: url("../img/watches.svg");
-  background-repeat: no-repeat;
-  background-position: 53% 52%;*/
+  left: 55px;
 }
 
 .img-wrapper-quadcopters::before {
   content: url(../img/quadcopters.svg);
   position: absolute;
   top: 49px;
-  left: 13px;/*
-  background-image: url("../img/quadcopters.svg");
-  background-repeat: no-repeat;
-  background-position: 51% 54%;*/
+  left: 13px;
 }
 
 .itemlist a {
@@ -1207,43 +1188,43 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 }
 
 .dji-color {
-  background: url('../img/dji.png');
+  background: url("../img/dji.png");
   width: 260px;
   height: 100px;
 }
 
 .dji-color:hover {
-  background: url('../img/dji-color.png');
+  background: url("../img/dji-color.png");
 }
 
 .spgadgets-color {
-  background: url('../img/spgadgets.png');
+  background: url("../img/spgadgets.png");
   width: 260px;
   height: 100px;
 }
 
 .spgadgets-color:hover {
-  background: url('../img/spgadgets-color.png');
+  background: url("../img/spgadgets-color.png");
 }
 
 .gopro-color {
-  background: url('../img/gopro.png');
+  background: url("../img/gopro.png");
   width: 260px;
   height: 100px;
 }
 
 .gopro-color:hover {
-  background: url('../img/gopro-color.png');
+  background: url("../img/gopro-color.png");
 }
 
 .vive-color {
-  background: url('../img/vive.png');
+  background: url("../img/vive.png");
   width: 260px;
   height: 100px;
 }
 
 .vive-color:hover {
-  background: url('../img/vive-color.png');
+  background: url("../img/vive-color.png");
 }
 
 .vive-wrapper {
@@ -1455,23 +1436,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   padding-left: 120px;
   width: 460px;
 }
-
-/*
-.text-wrap {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 460px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 120px;
-}*/
 
 .delivery {
   background-image: url("../img/delivery.svg");
@@ -2214,7 +2178,6 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 .main-header-map {
-  /*background-image: url('../img/map.jpg');*/
   width: 560px;
   height: 222px;
   padding-top: 40px;
@@ -2865,7 +2828,8 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::after,
+.filter-input-checkbox:focus + label::after {
   content: "";
 
   position: absolute;
@@ -2884,11 +2848,13 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   opacity: 0.6;
 }
 
-.filter-input-checkbox:checked + label:hover::after {
+.filter-input-checkbox:checked + label:hover::after,
+.filter-input-checkbox:focus + label:hover::after {
   opacity: 0.6;
 }
 
-.filter-input-checkbox:checked + label:hover::before {
+.filter-input-checkbox:checked + label:hover::before,
+.filter-input-checkbox:focus + label:hover::before {
   content: none;
 }
 
@@ -2896,11 +2862,13 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   opacity: 1;
 }
 
-.filter-input-checkbox:checked + label:active::before {
+.filter-input-checkbox:checked + label:active::before,
+.filter-input-checkbox:focus + label:active::before {
   content: none;
 }
 
-.filter-input-checkbox:checked + label:active::after {
+.filter-input-checkbox:checked + label:active::after,
+.filter-input-checkbox:focus + label:active::after {
   opacity: 1;
 }
 
@@ -2927,7 +2895,8 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   background-position: 0 0;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::after,
+.filter-input-radio:focus + label::after {
   content: "";
 
   position: absolute;
@@ -2946,11 +2915,13 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   opacity: 0.6;
 }
 
-.filter-input-radio:checked + label:hover::before {
+.filter-input-radio:checked + label:hover::before,
+.filter-input-radio:focus + label:hover::before {
   content: none;
 }
 
-.filter-input-radio:checked + label:hover::after {
+.filter-input-radio:checked + label:hover::after,
+.filter-input-radio:focus + label:hover::after {
   opacity: 0.6;
 }
 
