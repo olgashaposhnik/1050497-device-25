@@ -328,6 +328,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -356,13 +357,6 @@ img {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.user-navigator li:nth-child(2),
-.user-navigator li:nth-child(3),
-.user-navigator li:nth-child(4) {
-  display: flex;
-  max-width: 120px;
 }
 
 .login-link img {
@@ -425,6 +419,11 @@ img {
           align-items: baseline;
 }
 
+.login-link {
+  display: flex;
+  max-width: 70px;
+}
+
 .site-navigation a,
 .user-navigator a {
   color: #000000;
@@ -466,18 +465,6 @@ color: rgba(0, 0, 0, 0.6);
 
 .catalog-show svg {
   opacity: 0.3;
-}
-
-.site-navigation li:nth-child(1) {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 256px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -1720,6 +1707,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
 }
@@ -1788,6 +1776,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -1859,6 +1848,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
