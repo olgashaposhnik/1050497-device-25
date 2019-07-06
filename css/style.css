@@ -2828,8 +2828,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 }
 
 
-.filter-input-checkbox:checked + label::after,
-.filter-input-checkbox:focus + label::after {
+.filter-input-checkbox:checked + label::after {
   content: "";
 
   position: absolute;
@@ -2848,13 +2847,11 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   opacity: 0.6;
 }
 
-.filter-input-checkbox:checked + label:hover::after,
-.filter-input-checkbox:focus + label:hover::after {
+.filter-input-checkbox:checked + label:hover::after {
   opacity: 0.6;
 }
 
-.filter-input-checkbox:checked + label:hover::before,
-.filter-input-checkbox:focus + label:hover::before {
+.filter-input-checkbox:checked + label:hover::before {
   content: none;
 }
 
@@ -2862,13 +2859,11 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   opacity: 1;
 }
 
-.filter-input-checkbox:checked + label:active::before,
-.filter-input-checkbox:focus + label:active::before {
+.filter-input-checkbox:checked + label:active::before {
   content: none;
 }
 
-.filter-input-checkbox:checked + label:active::after,
-.filter-input-checkbox:focus + label:active::after {
+.filter-input-checkbox:checked + label:active::after {
   opacity: 1;
 }
 
@@ -2878,6 +2873,10 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
 
 .filter-input-checkbox:disabled + label::before {
   opacity: 0.25;
+}
+
+.filter-input-checkbox:focus + label::before {
+  outline: 2px solid #32a1ce;
 }
 
 .filter-input-radio + label::before {
@@ -2895,8 +2894,7 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   background-position: 0 0;
 }
 
-.filter-input-radio:checked + label::after,
-.filter-input-radio:focus + label::after {
+.filter-input-radio:checked + label::after{
   content: "";
 
   position: absolute;
@@ -2915,14 +2913,16 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   opacity: 0.6;
 }
 
-.filter-input-radio:checked + label:hover::before,
-.filter-input-radio:focus + label:hover::before {
+.filter-input-radio:checked + label:hover::before {
   content: none;
 }
 
-.filter-input-radio:checked + label:hover::after,
-.filter-input-radio:focus + label:hover::after {
+.filter-input-radio:checked + label:hover::after {
   opacity: 0.6;
+}
+
+.filter-input-radio:focus + label::before {
+  outline: 2px solid #32a1ce;
 }
 
 .filter-option-input:disabled + label {
@@ -3208,6 +3208,10 @@ input[id="condition-3"]:checked ~ .conditions-controls-wrapper .conditions-contr
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-item-image:focus-within .catalog-image-hover {
   display: flex;
 }
 
